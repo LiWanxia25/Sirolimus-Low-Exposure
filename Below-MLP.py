@@ -27,7 +27,7 @@ ABCB1_rs1128503_GG = st.selectbox("ABCB1.rs1128503_GG:", options=[0, 1], format_
 mTOR_rs2076655_GG = st.selectbox("mTOR.rs2076655_GG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 mTOR_rs2076655_AG = st.selectbox("mTOR.rs2076655_AG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 mTOR_rs2076655_AA = st.selectbox("mTOR.rs2076655_AA:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
-IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[1, 2], format_func=lambda x: 'No' if x == 1 else 'Yes')
 
 
 # 准备输入特征
