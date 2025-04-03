@@ -19,15 +19,15 @@ feature_names = ['BMI', 'TG','ABCB1_rs1128503_AA', 'ABCB1_rs1128503_AG',
        'ABCB1_rs1128503_GG', 'mTOR_rs2076655_GG', 'mTOR_rs2076655_AG',
        'mTOR_rs2076655_AA', 'IL10_rs1800896_CT']
 
-BMI = st.number_input("BMI (kg/m2):", min_value=10, max_value=30, value=0)
-TG = st.number_input("TG (mmol/L):", min_value=0, max_value=6, value=0)
-ABCB1_rs1128503_AA = st.selectbox("ABCB1.rs1128503_AA:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-ABCB1_rs1128503_AG = st.selectbox("ABCB1.rs1128503_AG:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-ABCB1_rs1128503_GG = st.selectbox("ABCB1.rs1128503_GG:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-mTOR_rs2076655_GG = st.selectbox("mTOR.rs2076655_GG:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-mTOR_rs2076655_AG = st.selectbox("mTOR.rs2076655_AG:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-mTOR_rs2076655_AA = st.selectbox("mTOR.rs2076655_AA:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
-IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
+BMI = st.number_input("BMI (kg/m2):", min_value=10, max_value=30, value=15)
+TG = st.number_input("TG (mmol/L):", min_value=0, max_value=6, value=3)
+ABCB1_rs1128503_AA = st.selectbox("ABCB1.rs1128503_AA:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+ABCB1_rs1128503_AG = st.selectbox("ABCB1.rs1128503_AG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+ABCB1_rs1128503_GG = st.selectbox("ABCB1.rs1128503_GG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+mTOR_rs2076655_GG = st.selectbox("mTOR.rs2076655_GG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+mTOR_rs2076655_AG = st.selectbox("mTOR.rs2076655_AG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+mTOR_rs2076655_AA = st.selectbox("mTOR.rs2076655_AA:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 
 
 # 准备输入特征
