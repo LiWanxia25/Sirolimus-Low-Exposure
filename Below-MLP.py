@@ -20,15 +20,15 @@ feature_names = ['BMI', 'TG','ABCB1_rs1128503_AA', 'ABCB1_rs1128503_AG',
        'mTOR_rs2076655_AA', 'IL10_rs1800896_CT']
 
 BMI = st.number_input("BMI (kg/m2):", min_value=10.00, max_value=30.00, value=15.00)
-##IL10_rs1800896_CT = st.number_input("TG (mmol/L):", min_value=0.00, max_value=6.00, value=3.00)
-TG = st.number_input("IL-10.rs1800896 (1=TT,2=CT):", min_value=1, max_value=2, value=1)
+TG = st.number_input("TG (mmol/L):", min_value=0.00, max_value=6.00, value=3.00)
+IL10_rs1800896_CT = st.number_input("IL-10.rs1800896 (1=TT,2=CT):", min_value=1, max_value=2, value=1)
 ABCB1_rs1128503_AA = st.selectbox("ABCB1.rs1128503_AA:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 ABCB1_rs1128503_AG = st.selectbox("ABCB1.rs1128503_AG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 ABCB1_rs1128503_GG = st.selectbox("ABCB1.rs1128503_GG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 mTOR_rs2076655_GG = st.selectbox("mTOR.rs2076655_GG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 mTOR_rs2076655_AG = st.selectbox("mTOR.rs2076655_AG:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 mTOR_rs2076655_AA = st.selectbox("mTOR.rs2076655_AA:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
-IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
+#IL10_rs1800896_CT = st.selectbox("IL-10.rs1800896_CT:", options=[0, 1], format_func=lambda x: 'No' if x == 0 else 'Yes')
 
 
 # 准备输入特征
